@@ -27,7 +27,14 @@ public class StudentConfig {
                     LocalDate.of(2006, Month.JANUARY, 18),
                     14
             );
-            repo.saveAll( List.of(prem, pranav));
+
+            Student sindu = new Student(
+                    "sindu@hotmail.com",
+                    "Sinduja Prem",
+                    LocalDate.of(1970, Month.JANUARY, 21),
+                    50
+            );
+            repo.saveAll( List.of(prem, pranav, sindu));
         };
     }
 }
