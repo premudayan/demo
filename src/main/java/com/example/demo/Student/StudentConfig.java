@@ -17,22 +17,19 @@ public class StudentConfig {
             Student prem = new Student(
                     "prem@hotmail.com",
                     "Prem",
-                    LocalDate.of(2000, Month.APRIL, 10),
-                    30
+                    LocalDate.of(2000, Month.APRIL, 10)
             );
 
             Student pranav = new Student(
                     "pranav@hotmail.com",
                     "Pranav Prem",
-                    LocalDate.of(2006, Month.JANUARY, 18),
-                    14
+                    LocalDate.of(2006, Month.JANUARY, 18)
             );
 
             Student sindu = new Student(
                     "sindu@hotmail.com",
                     "Sinduja Prem",
-                    LocalDate.of(1970, Month.JANUARY, 21),
-                    50
+                    LocalDate.of(1970, Month.JANUARY, 21)
             );
             repo.saveAll( List.of(prem, pranav, sindu));
         };
